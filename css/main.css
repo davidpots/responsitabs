@@ -38,6 +38,24 @@
         pre,code  { font-size: 15px; line-height: 20px; font-family: 'Andale Mono', monospace; }
         pre       { overflow: auto; margin: 0 0 20px 0; padding: 20px; border-radius: 6px; background: #eee; }
         code      { display: inline-block; white-space: nowrap; padding: 2px 6px; border-radius: 3px; background: #f4f4f4; }
+
+
+
+
+  pre::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 6px;
+    height: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: rgba(156, 156, 156, .6);
+}
+
+
+
+
         
         table     { border-collapse: collapse; table-layout:fixed; width:100%; margin: 0 0 20px 0; }
         td,th     { padding: 8px 9px 7px; font-size: 14px; line-height: 17px; border: 1px solid #aaa; text-align: left; }
