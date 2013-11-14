@@ -19,12 +19,12 @@
 
         a  { color: #0089ef; }
 
-        h1,h2,h3,h4,h5,h6 { color: #444; margin: 28px 0 20px 0; }
+        h1,h2,h3,h4,h5,h6 { color: #444; margin: 0 0 20px 0; }
 
-        h1      { font-size: 40px; }
+        h1      { font-size: 40px; line-height: 44px; }
         h2      { font-size: 32px; }
         h3      { font-size: 24px; }
-        h4      { font-size: 21px; }
+        h4      { font-size: 21px; margin-top: 48px; }
         h5      { font-size: 18px; }
         h6      { font-size: 18px; }
 
@@ -36,7 +36,8 @@
         dl dd     { margin-bottom: 0px; margin-left: 24px; }
         
         pre,code  { font-size: 15px; line-height: 20px; font-family: 'Andale Mono', monospace; }
-        pre       { overflow: auto; margin: 0 0 20px 0; padding: 20px; border-radius: 6px; background: #eee; }
+        pre       { overflow: auto; margin: 0 -20px 20px; padding: 20px; background: #eee; }
+        pre h4    { font-size: 18px; font-family: "Helvetica Neue"; margin: 0; }
         code      { display: inline-block; white-space: nowrap; padding: 2px 6px; border-radius: 3px; background: #f4f4f4; }
 
 
@@ -44,12 +45,12 @@
 
   pre::-webkit-scrollbar {
     -webkit-appearance: none;
-    width: 6px;
-    height: 8px;
+/*    width: 6px;*/
+    height: 4px;
 }
 
 pre::-webkit-scrollbar-thumb {
-    border-radius: 6px;
+/*    border-radius: 6px;*/
     background-color: rgba(156, 156, 156, .6);
 }
 
@@ -72,4 +73,5 @@ pre::-webkit-scrollbar-thumb {
            Otherwise it will be 100% wide. */
         @media (min-width: 768px) { 
           .content { width: 768px; margin: 0 auto; } 
+          pre { margin-left: 0; margin-right: 0; border-radius: 6px; }
         }
