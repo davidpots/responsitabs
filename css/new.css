@@ -1,0 +1,112 @@
+/* -- SETUP -- */
+
+        * {
+          margin: 0;
+          padding: 0;
+          position: relative;
+          -webkit-box-sizing: border-box;
+             -moz-box-sizing: border-box;
+                  box-sizing: border-box;
+        }
+
+/* -- GENERAL TYPOGRAPHY -- */
+
+        body { 
+          color: #555;
+          font-family: 'Helvetica Neue', Arial, sans-serif;
+          font-size: 16px;
+          line-height: 1.4;
+        }
+
+        a  { color: #0089ef; }
+
+        h1,h2,h3,h4,h5,h6 { color: #444; margin: 0 0 20px 0; }
+
+        h1      { font-size: 40px; line-height: 44px; }
+        h2      { font-size: 32px; }
+        h3      { font-size: 24px; }
+        h4      { font-size: 21px; margin-top: 21px; }
+        h2 + h4 { margin-top: 0; }
+        h5      { font-size: 18px; }
+        h6      { font-size: 18px; }
+
+        p         { margin: 0 0 20px 0; }
+        
+        ul,ol     { margin: 0 0 20px 28px; padding: 0; }
+        dl        { margin: 0 0 20px 0; }
+        dl dt     { color: #444; margin-bottom: 4px; font-weight: bold; }
+        dl dd     { margin-bottom: 0px; margin-left: 24px; }
+        
+        pre,code  { font-size: 15px; line-height: 20px; font-family: 'Courier', monospace; }
+        pre       { overflow: auto; margin: 0 -20px 20px 0; padding: 20px; background: #fafafa; border: 1px solid #ddd; display: inline-block; max-width: 100%; }
+        pre h4    { margin: 0 0 -15px 0; font-size: 15px; text-transform: uppercase; }
+        code      { display: inline-block; white-space: nowrap; padding: 2px 6px; border-radius: 3px; background: #f4f4f4; }
+        pre.pre_lyrics { width: 100%; }
+        
+        table     { border-collapse: collapse; table-layout:fixed; width:100%; margin: 0 0 20px 0; }
+        td,th     { padding: 8px 9px 7px; font-size: 14px; line-height: 17px; border: 1px solid #aaa; text-align: left; }
+        th        { background: #eee; }
+        td        { font-size: 13px; background: #fff; }
+
+/* -- LAYOUT -- */
+
+        html, body  { height: 100%; }
+        body        { min-width: 320px; }
+
+
+        body { 
+          padding-left: 70px; 
+        }
+
+                @media screen and (max-width: 680px) {
+                  body { padding: 0; left: 0; right: 0; }
+                }
+
+        #dock {
+          background: #333;
+          position: fixed;
+          height: 50px;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 500;
+          display: none;
+        }
+
+                @media screen and (max-width: 680px) {
+                  #dock { display: block; }
+                }
+
+        #shelf {
+          background: #333; /* freely override in viz styling section */
+          width: 50px;
+          position: fixed;
+          padding: 10px;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          z-index: 500;
+        }
+
+                @media screen and (max-width: 680px) {
+                  #shelf { display: none; }
+                }
+
+        #content {
+          min-height: 1000px;
+          padding: 15px 15px 0 0;
+          position: relative;
+          width: 100%;
+        }
+
+                @media screen and (max-width: 680px) {
+                  #content { padding-right: 0; padding-top: 70px; }
+                }
+
+        .grid-temp {
+          padding: 0;
+        }
+                @media screen and (max-width: 680px) {
+                  .grid-temp { padding: 0 15px; }
+                }
+
