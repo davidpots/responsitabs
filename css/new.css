@@ -42,9 +42,9 @@
         pre h4    { margin: 0 0 -15px 0; font-size: 15px; text-transform: uppercase; }
         code      { display: inline-block; white-space: nowrap; padding: 2px 6px; border-radius: 3px; background: #f4f4f4; }
 
-                 @media screen and (max-width: 728px) {
-                  pre { font-size: 13px; line-height: 13px; }
-                  pre h4 { font-size: 13px; line-height: 13px; }
+                 @media screen and (max-width: 800px) {
+                  pre { font-size: 12px; line-height: 12px; }
+                  pre h4 { font-size: 12px; line-height: 12px; }
                 }
         
                  @media screen and (max-width: 600px) {
