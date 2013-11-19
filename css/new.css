@@ -42,10 +42,14 @@
         pre h4    { margin: 0 0 -15px 0; font-size: 15px; text-transform: uppercase; }
         code      { display: inline-block; white-space: nowrap; padding: 2px 6px; border-radius: 3px; background: #f4f4f4; }
 
+/*
+                 FIGURE THIS OUT! The mid-range of 7-inch tablets curently require scrolling for lines of PRE text between 65-80.
+                 If scrolling is ever possibly required, that bounding box in the breakpoint below needs to be present.
+                 
                  @media screen and (max-width: 800px) {
                   pre { font-size: 12px; line-height: 12px; }
                   pre h4 { font-size: 12px; line-height: 12px; }
-                }
+                }*/
         
                  @media screen and (max-width: 600px) {
                   pre { font-size: 12px; line-height: 14px; padding: 20px; background: #fafafa; border: 1px solid #ddd; }
