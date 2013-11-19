@@ -12,9 +12,9 @@
 /* -- GENERAL TYPOGRAPHY -- */
 
         body { 
-          color: #555;
-          font-family: 'Helvetica Neue', Arial, sans-serif;
-          font-size: 16px;
+          color: #666;
+          font-family: 'Proxima Nova Regular','Open Sans', 'Helvetica Neue', Arial, sans-serif;
+          font-size: 18px;
           line-height: 1.4;
         }
 
@@ -23,9 +23,9 @@
         h1,h2,h3,h4,h5,h6 { color: #444; margin: 0 0 20px 0; }
 
         h1      { font-size: 40px; line-height: 44px; }
-        h2      { font-size: 32px; }
+        h2      { font-size: 40px; line-height: 44px; font-family: 'Proxima Nova Bold'; color: #f05a28; text-transform: uppercase; text-align: center; letter-spacing: 2px; border-top: 3px double #e6e6e6; border-bottom: 3px double #e6e6e6; padding: 24px 0 20px; margin: 0 0 48px 0; }
         h3      { font-size: 24px; }
-        h4      { font-size: 21px; margin-top: 21px; }
+        h4      { font-size: 19px; margin: 32px 0 10px 0; font-family: 'Proxima Nova Light'; color: #44a0d9; font-weight: 300; text-transform: uppercase; }
         h2 + h4 { margin-top: 0; }
         h5      { font-size: 18px; }
         h6      { font-size: 18px; }
@@ -38,11 +38,15 @@
         dl dd     { margin-bottom: 0px; margin-left: 24px; }
         
         pre,code  { font-size: 15px; line-height: 20px; font-family: 'Courier', monospace; }
-        pre       { overflow: auto; margin: 0 -20px 20px 0; padding: 20px; background: #fafafa; border: 1px solid #ddd; display: inline-block; max-width: 100%; }
+        pre       { /*padding: 20px; background: #fafafa; border: 1px solid #ddd; */ overflow: auto; display: inline-block; max-width: 100%; }
         pre h4    { margin: 0 0 -15px 0; font-size: 15px; text-transform: uppercase; }
         code      { display: inline-block; white-space: nowrap; padding: 2px 6px; border-radius: 3px; background: #f4f4f4; }
-        pre.pre_lyrics { width: 100%; }
         
+        pre.pre_lyrics { width: 100%; margin-bottom: 50px; }
+        pre.pre_lyrics strong.chord { color: #f05a28; }
+        pre.pre_lyrics .note { color: #bbb; }
+        pre.pre_lyrics h4 { font-family: 'Courier'; color: #333; font-weight: bold; }
+
         table     { border-collapse: collapse; table-layout:fixed; width:100%; margin: 0 0 20px 0; }
         td,th     { padding: 8px 9px 7px; font-size: 14px; line-height: 17px; border: 1px solid #aaa; text-align: left; }
         th        { background: #eee; }
@@ -55,15 +59,15 @@
 
 
         body { 
-          padding-left: 70px; 
+          padding-left: 250px; 
         }
 
-                @media screen and (max-width: 680px) {
+                @media screen and (max-width: 1028px) {
                   body { padding: 0; left: 0; right: 0; }
                 }
 
         #dock {
-          background: #333;
+          background: #44a0d9;
           position: fixed;
           height: 50px;
           top: 0;
@@ -73,13 +77,13 @@
           display: none;
         }
 
-                @media screen and (max-width: 680px) {
+                @media screen and (max-width: 1028px) {
                   #dock { display: block; }
                 }
 
         #shelf {
-          background: #333; /* freely override in viz styling section */
-          width: 50px;
+          background: #44a0d9; /* freely override in viz styling section */
+          width: 220px;
           position: fixed;
           padding: 10px;
           top: 0;
@@ -88,7 +92,7 @@
           z-index: 500;
         }
 
-                @media screen and (max-width: 680px) {
+                @media screen and (max-width: 1028px) {
                   #shelf { display: none; }
                 }
 
@@ -99,14 +103,30 @@
           width: 100%;
         }
 
-                @media screen and (max-width: 680px) {
+                @media screen and (max-width: 1028px) {
                   #content { padding-right: 0; padding-top: 70px; }
                 }
 
         .grid-temp {
           padding: 0;
+          max-width: 840px;
+          margin: 0 auto;
         }
-                @media screen and (max-width: 680px) {
+                @media screen and (max-width: 1028px) {
                   .grid-temp { padding: 0 15px; }
                 }
 
+/* -- SIDEBAR / NAV -- */
+
+#shelf { text-align: center; }
+#shelf img { margin: 20px 0 10px 0; width: 50px; }
+#shelf h1 { font-family: 'Proxima Nova Bold'; text-transform: uppercase; color: #fff; font-size: 26px; line-height: 26px; letter-spacing: 1px; margin: 0 0 8px 0; }
+#shelf p { color: #fff; opacity: 0.8; font-size: 14px; line-height: 18px; width: 150px; margin: 0 auto; }
+
+/* -- HERO -- */
+
+.hero { margin: 0 0 54px 0; }
+.hero .avatar { text-align: center; margin: 80px 0 16px 0; }
+.hero .avatar img { width: 180px; height: 180px; border-radius: 90px; }
+.hero h1 { color: #333; text-transform: uppercase; font-size: 64px; line-height: 70px; font-family: 'Proxima Nova Bold'; text-align: center; margin: 0 0 8px 0; }
+.hero h3 { font-family: 'Proxima Nova Light'; text-align: center; text-transform: uppercase; color: #888; }
