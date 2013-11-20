@@ -138,14 +138,19 @@
       #title .text { position: absolute; left: 67px; top: 20px; }
       #title h1 { margin: 0 0 4px 0; }
       #title p { width: auto; }
-      #title #navburger { position: absolute; right: 20px; top: 20px; display: block; height: 44px; width: 44px; line-height: 44px; color: #fff; display: block; background: #000; text-align: center; font-size: 32px;}
+      #title #navburger { position: absolute; right: 20px; top: 20px; display: block; height: 44px; width: 44px; line-height: 44px; color: #fff; display: block; background: #000; text-align: center; font-size: 32px; background: #0486ba url(../images/hamburger.png) center no-repeat; background-size: 16px 12px; border-radius: 4px; }
+      #title #navburger:hover { background-color: #333; }
       #nav { display: none; }
     }
     
     /* Title: Really Small Screens */
     @media screen and (max-width: 480px) {
+      #title { height: 64px; }
       #title img { display: none; }
-      #title .text { left: 20px; }
+      #title .text { left: 12px; top: 16px; }
+      #title h1 { font-size: 21px; line-height: 21px; }
+      #title p { font-size: 12px; line-height: 12px; }
+      #title #navburger { right: 12px; top: 10px; }
     }
 
 #nav ul { margin: 0; }
