@@ -39,7 +39,7 @@
         dl dd     { margin-bottom: 0px; margin-left: 24px; }
         
         pre,code  { font-size: 15px; line-height: 20px; font-family: 'Courier', monospace; color: #333; }
-        pre       { overflow: auto; display: inline-block; max-width: 100%; background: #fff; border: 1px solid rgba(0,0,0,0.1); padding: 28px 20px 20px; border-radius: 2px; }
+        pre       { overflow: auto; display: inline-block; max-width: 100%; background: #fff; border: 1px solid rgba(0,0,0,0.1); padding: 28px 20px 20px; border-radius: 2px; margin: 0 0 20px 0; }
         pre h4    { margin: 0 0 -25px 0; font-size: 15px; text-transform: uppercase; }
         code      { display: inline-block; white-space: nowrap; padding: 2px 6px; border-radius: 3px; background: #f4f4f4; }
 
@@ -134,7 +134,7 @@
       #title p { width: auto; }
       #title #navburger { position: absolute; right: 20px; top: 20px; display: block; height: 44px; width: 44px; line-height: 44px; color: #fff; display: block; text-align: center; font-size: 32px; background: #0486ba url(../images/hamburger.png) center no-repeat; background-size: 16px 12px; border-radius: 4px; }
       #title #navburger:hover { background-color: #333; }
-      /*#nav { display: none; }*/
+      #nav { display: none; }
     }
     
     /* Title: Really Small Screens */
@@ -148,21 +148,22 @@
     }
 
 #nav ul { margin: 0; }
-#nav ul > li { list-style: none; margin-bottom: 2px; }
-#nav ul > li a { text-align: center; text-transform: uppercase; font-size: 13px; line-height: 14px; font-family: "Proxima Nova Light"; letter-spacing: 0.5px; color: #fff; padding: 18px 0px 15px; display: block; }
-#nav ul > li a:hover {  }
+#nav ul > li { list-style: none; }
+#nav ul > li a { text-align: center; text-transform: uppercase; font-size: 13px; line-height: 14px; font-family: "Proxima Nova Light"; letter-spacing: 0.5px; color: #fff; padding: 18px 0px 15px; display: block; border-bottom: 1px solid rgba(255,255,255,0.3); }
+#nav ul > li:first-child a { border-top: 1px solid rgba(255,255,255,0.3); }
+#nav ul > li a:hover { background: rgba(0,0,0,0.1); }
 
     /* Social Icons */
     #social { position: fixed; width: 210px; bottom: 24px; }
     #social p { color: #fff; opacity: 0.8; font-family: "Proxima Nova Light"; font-size: 14px; line-height: 18px; text-align: center; margin: 0 0 9px 0; }
     #social ul { margin: 0 0 0 -10px; text-align: center; font-size: 0; }
     #social ul li { list-style: none; display: inline-block; }
-    #social ul li a { display: block; width: 36px; height: 36px; background: #0486ba; overflow: hidden; margin-left: 6px; border-radius: 4px; }
-    #social ul li a:hover { background: #f05a28; }
+    #social ul li a { display: block; width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.3); overflow: hidden; margin-left: 6px; border-radius: 4px; }
+    #social ul li a:hover { background: rgba(0,0,0,0.1); }
 
         /* Title: Small Screens */
         @media screen and (max-width: 1028px) {
-          #social { position: static; width: 100%; padding: 20px 0 24px; /*display: none;*/ }
+          #social { position: static; width: 100%; padding: 20px 0 24px; display: none; }
         }
 
 
