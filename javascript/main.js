@@ -1,6 +1,6 @@
 $(document).ready(function(){
   $("#navburger").click(function(){
-    $("#drawer").slideToggle();
+    $("#drawer").toggle();
     $(this).toggleClass('open');
   });
 });
