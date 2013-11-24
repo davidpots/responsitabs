@@ -132,9 +132,9 @@
       #title .text { position: absolute; left: 67px; top: 20px; }
       #title h1 { margin: 0 0 4px 0; }
       #title p { width: auto; }
-      #title #navburger { position: absolute; right: 20px; top: 20px; display: block; height: 44px; width: 44px; line-height: 44px; color: #fff; display: block; text-align: center; font-size: 32px; background: #0486ba url(../images/hamburger.png) center no-repeat; background-size: 16px 12px; border-radius: 4px; }
-      #title #navburger:hover { background-color: #333; }
-      #nav { display: none; }
+      #title #navburger { position: absolute; right: 20px; top: 20px; display: block; height: 44px; width: 44px; line-height: 44px; color: #fff; display: block; text-align: center; font-size: 32px; background: transparent url(../images/hamburger.png) center no-repeat; background-size: 16px 12px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.3);}
+      #title #navburger:hover,
+      #title #navburger.open { background-color: rgba(0,0,0,0.15); border-color: rgba(255,255,255,0.5); background-image: url(../images/hamburger-close.png); background-size: 12px 12px; }
     }
     
     /* Title: Really Small Screens */
@@ -147,11 +147,23 @@
       #title #navburger { right: 12px; top: 10px; }
     }
 
+/* Drawer */
+@media screen and (max-width: 1028px) {
+  #drawer { display: none; }
+}
+
+/* Nav */
 #nav ul { margin: 0; }
 #nav ul > li { list-style: none; }
 #nav ul > li a { text-align: center; text-transform: uppercase; font-size: 13px; line-height: 14px; font-family: "Proxima Nova Light"; letter-spacing: 0.5px; color: #fff; padding: 18px 0px 15px; display: block; border-bottom: 1px solid rgba(255,255,255,0.3); }
 #nav ul > li:first-child a { border-top: 1px solid rgba(255,255,255,0.3); }
 #nav ul > li a:hover { background: rgba(0,0,0,0.1); }
+
+        /* Nav: Small Screens */
+        @media screen and (max-width: 1028px) {
+          #nav ul > li a { background: rgba(0,0,0,0.1); font-size: 14px; line-height: 18px; }
+          #nav ul > li a:hover { background: rgba(0,0,0,0.2); }
+        }
 
     /* Social Icons */
     #social { position: fixed; width: 210px; bottom: 24px; }
@@ -163,7 +175,7 @@
 
         /* Title: Small Screens */
         @media screen and (max-width: 1028px) {
-          #social { position: static; width: 100%; padding: 20px 0 24px; display: none; }
+          #social { position: static; width: 100%; padding: 24px 0 32px; }
         }
 
 
