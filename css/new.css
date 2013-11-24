@@ -45,16 +45,25 @@
 
                  
                  @media screen and (max-width: 800px) {
-                  pre { font-size: 12px; line-height: 14px; }
-                  pre h4 { font-size: 12px; line-height: 14px; }
-                }
+                    pre { font-size: 12px; line-height: 14px; }
+                    pre h4 { font-size: 12px; line-height: 14px; }
+                  }
+
+                  /* PRE scroll bars */
+                  pre::-webkit-scrollbar {
+                    -webkit-appearance: none;
+                    height: 6px;
+                  }
+                  pre::-webkit-scrollbar-thumb {
+                      background-color: #d8d8d8;
+                  }
 
         pre.pre_lyrics { width: 100%; margin-bottom: 50px; }
         pre.pre_lyrics h4 { font-family: 'Courier'; color: #333; font-weight: bold; }
 
         pre .chords_inline { color: #f05a28; }
         pre strong.chord { color: #f05a28; }
-        pre .note { color: #b5bcca; }
+        pre .note { color: #b8b8b8; }
 
         table     { border-collapse: collapse; table-layout:fixed; width:100%; margin: 0 0 20px 0; }
         td,th     { padding: 8px 9px 7px; font-size: 14px; line-height: 17px; border: 1px solid #aaa; text-align: left; }
