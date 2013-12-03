@@ -25,15 +25,6 @@
 
 $(document).ready(function(){
 
-setTimeout(function(){
-  $('#content').animate({
-    opacity: 1.0,
-    top: "-=20",
-  }, 500);
-},300);
-
-
-
   // Nav Drawer Open/Close
   $("#navburger").click(function(){
     $("#drawer").toggle();
@@ -49,6 +40,7 @@ setTimeout(function(){
     $(this).parent().parent().css('width',size);
   } );
 
+  $('#content').fadeIn(600);
 
 });
 
@@ -59,4 +51,5 @@ $(window).bind("load", function() {
   $("h1.fit").fitText(0.8, { minFontSize: '64px', maxFontSize: '80px' });
   $("h2.fit").fitText(1.0, { minFontSize: '30px', maxFontSize: '54px' });
   $("h3.fit").fitText(0.8, { minFontSize: '27px', maxFontSize: '32px' });
+
 });
