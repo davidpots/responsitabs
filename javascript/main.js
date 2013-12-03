@@ -47,7 +47,7 @@ $(window).bind("load", function() {
 
   // Load the Fit Text!
   $("h1.fit").fitText(0.8, { minFontSize: '64px', maxFontSize: '80px' });
-  $("h2.fit").fitText(1.0, { minFontSize: '30px', maxFontSize: '54px' });
+  $("h2.fit").fitText(0.6, { minFontSize: '30px', maxFontSize: '54px' });
   $("h3.fit").fitText(0.8, { minFontSize: '27px', maxFontSize: '32px' });
 
   // $('#content').animate({
