@@ -50,8 +50,8 @@ $(window).bind("load", function() {
   $("h2.fit").fitText(1.0, { minFontSize: '30px', maxFontSize: '54px' });
   $("h3.fit").fitText(0.8, { minFontSize: '27px', maxFontSize: '32px' });
 
-  $('#content').animate({
-    opacity: 1
-  }, 600);
+  // $('#content').animate({
+  //   opacity: 1
+  // }, 600);
 
 });
