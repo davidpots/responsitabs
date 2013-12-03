@@ -1,3 +1,53 @@
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('fonts/Proxima_Nova_Light-webfont.eot');
+    src: url('fonts/Proxima_Nova_Light-webfont.eot?iefix') format('eot'),
+         url('fonts/Proxima_Nova_Light-webfont.woff') format('woff'),
+         url('fonts/Proxima_Nova_Light-webfont.ttf') format('truetype'),
+         url('fonts/Proxima_Nova_Light-webfont.svg#webfont66L2sXE3') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNovaReg';
+    src: url('fonts/Proxima_Nova_Reg-webfont.eot');
+    src: url('fonts/Proxima_Nova_Reg-webfont.eot?iefix') format('eot'),
+         url('fonts/Proxima_Nova_Reg-webfont.woff') format('woff'),
+         url('fonts/Proxima_Nova_Reg-webfont.ttf') format('truetype'),
+         url('fonts/Proxima_Nova_Reg-webfont.svg#webfont66L2sXE3') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('fonts/Proxima_Nova_Semibold-webfont.eot');
+    src: url('fonts/Proxima_Nova_Semibold-webfont.eot?iefix') format('eot'),
+         url('fonts/Proxima_Nova_Semibold-webfont.woff') format('woff'),
+         url('fonts/Proxima_Nova_Semibold-webfont.ttf') format('truetype'),
+         url('fonts/Proxima_Nova_Semibold-webfont.svg#webfont66L2sXE3') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('fonts/Proxima_Nova_Bold-webfont.eot');
+    src: url('fonts/Proxima_Nova_Bold-webfont.eot?iefix') format('eot'),
+         url('fonts/Proxima_Nova_Bold-webfont.woff') format('woff'),
+         url('fonts/Proxima_Nova_Bold-webfont.ttf') format('truetype'),
+         url('fonts/Proxima_Nova_Bold-webfont.svg#webfont66L2sXE3') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
 /* -- SETUP -- */
 
         * {
@@ -13,7 +63,7 @@
 
         body { 
           color: rgba(0,0,0,0.6);
-          font-family: 'Proxima Nova Regular','Open Sans', 'Helvetica Neue', Arial, sans-serif;
+          font-family: 'ProximaNovaReg','Helvetica Neue', Arial, sans-serif;
           font-size: 18px;
           line-height: 1.3;
           background: #fff;
@@ -25,16 +75,16 @@
         h1,h2,h3,h4,h5,h6 { color: #444; margin: 0 0 20px 0; font-weight: normal; }
 
         h1      { font-size: 40px; line-height: 44px; }
-        h2      { font-size: 54px; line-height: 1.0; font-family: 'Proxima Nova Bold'; color: #f05a28; text-transform: uppercase; text-align: center; letter-spacing: 2px; border-top: 3px double rgba(0,0,0,0.09); border-bottom: 3px double rgba(0,0,0,0.09); padding: 32px 0 24px; margin: 0 0 48px 0; }
+        h2      { font-size: 54px; line-height: 1.0; font-family: 'ProximaNovaBold'; color: #f05a28; text-transform: uppercase; text-align: center; letter-spacing: 2px; border-top: 3px double rgba(0,0,0,0.09); border-bottom: 3px double rgba(0,0,0,0.09); padding: 32px 0 24px; margin: 0 0 48px 0; }
         h3      { font-size: 24px; }
-        h4      { font-size: 19px; line-height: 24px; margin: 32px 0 10px 0; font-family: 'Proxima Nova Bold'; color: rgba(0,0,0,0.8); font-weight: normal; text-transform: uppercase; }
+        h4      { font-size: 19px; line-height: 24px; margin: 32px 0 10px 0; font-family: 'ProximaNovaBold'; color: rgba(0,0,0,0.8); font-weight: normal; text-transform: uppercase; }
         h2 + h4 { margin-top: 0; }
         h5      { font-size: 18px; }
         h6      { font-size: 18px; }
 
         p         { margin: 0 0 20px 0; }
         strong { font-weight: normal; }
-        p strong { font-family: "Proxima Nova Bold"; color: rgba(0,0,0,0.72); }
+        p strong { font-family: "ProximaNovaBold"; color: rgba(0,0,0,0.72); }
         
         ul,ol     { margin: 0 0 20px 28px; padding: 0; }
         dl        { margin: 0 0 20px 0; }
@@ -42,6 +92,8 @@
         dl dd     { margin-bottom: 0px; margin-left: 24px; }
         
         pre,code  { font-size: 15px; line-height: 20px; font-family: 'Courier', monospace; }
+        pre strong,
+        code strong { font-weight: bold; }
         pre       { overflow: auto; display: inline-block; max-width: 100%; margin: 0 0 20px 0; }
         pre h4    { margin: 0 0 -25px 0; font-size: 15px; text-transform: uppercase; }
         code      { display: inline-block; white-space: nowrap; padding: 2px 6px; border-radius: 3px; background: #f4f4f4; }
@@ -131,8 +183,8 @@
 /* -- SIDEBAR / NAV -- */
   
     /* Title: All Screensizes */
-    #title h1 { font-family: 'Proxima Nova Bold'; text-transform: uppercase; color: #fff; letter-spacing: 1px; }
-    #title p { color: rgba(255,255,255,0.7); font-family: "Proxima Nova Light"; }
+    #title h1 { font-family: 'ProximaNovaBold'; text-transform: uppercase; color: #fff; letter-spacing: 1px; }
+    #title p { color: rgba(255,255,255,0.7); font-family: "ProximaNovaLight"; }
 
     /* Title: Wide Screens */
     #title { text-align: center; }
@@ -170,7 +222,7 @@
 /* Nav */
 #nav ul { margin: 0; }
 #nav ul > li { list-style: none; }
-#nav ul > li a { text-align: center; text-transform: uppercase; font-size: 13px; line-height: 14px; font-family: "Proxima Nova Light"; letter-spacing: 0.5px; color: #fff; padding: 18px 0px 15px; display: block; border-bottom: 1px solid rgba(255,255,255,0.3); }
+#nav ul > li a { text-align: center; text-transform: uppercase; font-size: 13px; line-height: 14px; font-family: "ProximaNovaLight"; letter-spacing: 0.5px; color: #fff; padding: 18px 0px 15px; display: block; border-bottom: 1px solid rgba(255,255,255,0.3); }
 #nav ul > li:first-child a { border-top: 1px solid rgba(255,255,255,0.3); }
 #nav ul > li a:hover { background: rgba(0,0,0,0.1); }
 
@@ -182,7 +234,7 @@
 
     /* Social Icons */
     #social { position: fixed; width: 210px; bottom: 24px; }
-    #social p { color: #fff; opacity: 0.8; font-family: "Proxima Nova Light"; font-size: 14px; line-height: 18px; text-align: center; margin: 0 0 9px 0; }
+    #social p { color: #fff; opacity: 0.8; font-family: "ProximaNovaLight"; font-size: 14px; line-height: 18px; text-align: center; margin: 0 0 9px 0; }
     #social ul { margin: 0 0 0 -10px; text-align: center; font-size: 0; }
     #social ul li { list-style: none; display: inline-block; }
     #social ul li a { display: block; width: 36px; height: 36px; border: 1px solid rgba(255,255,255,0.3); overflow: hidden; margin-left: 6px; border-radius: 4px; }
@@ -199,12 +251,12 @@
 .hero { margin: 0 0 52px 0; }
 .hero .avatar { text-align: center; margin: 80px 0 21px 0; }
 .hero .avatar img { width: 180px; height: 180px; border-radius: 90px; }
-.hero h1 { color: rgba(0,0,0,0.8); text-transform: uppercase; font-size: 80px; line-height: 1.0; font-family: 'Proxima Nova Bold';font-weight: normal;  text-align: center; margin: 0 0 18px 0; }
-.hero h3 { font-size: 32px; line-height: 1.0; font-family: 'Proxima Nova Light'; font-weight: normal; text-align: center; text-transform: uppercase; color: rgba(0,0,0,0.5); margin: 0 0 35px 0; }
+.hero h1 { color: rgba(0,0,0,0.8); text-transform: uppercase; font-size: 80px; line-height: 1.0; font-family: 'ProximaNovaBold';font-weight: normal;  text-align: center; margin: 0 0 18px 0; }
+.hero h3 { font-size: 32px; line-height: 1.0; font-family: 'ProximaNovaLight'; font-weight: normal; text-align: center; text-transform: uppercase; color: rgba(0,0,0,0.5); margin: 0 0 35px 0; }
 .hero p.meta { text-align: center; font-size: 13px; line-height: 20px; margin: 0 0 46px 0; }
-.hero p.meta em { color: rgba(0,0,0,0.3); display: block; font-style: normal; font-family: 'Proxima Nova Light' }
-.hero p.meta strong { color: rgba(0,0,0,0.5); font-weight: normal; text-transform: uppercase; letter-spacing: 0px; font-family: 'Proxima Nova Bold' }
-.hero p.jumpto { text-align: center; font-size: 12px; font-family: 'Proxima Nova Light'; color: rgba(0,0,0,0.6); text-transform: uppercase; }
+.hero p.meta em { color: rgba(0,0,0,0.3); display: block; font-style: normal; font-family: 'ProximaNovaLight' }
+.hero p.meta strong { color: rgba(0,0,0,0.5); font-weight: normal; text-transform: uppercase; letter-spacing: 0px; font-family: 'ProximaNovaBold' }
+.hero p.jumpto { text-align: center; font-size: 12px; font-family: 'ProximaNovaLight'; color: rgba(0,0,0,0.6); text-transform: uppercase; }
 .hero p.jumpto a { display: inline-block; }
 .hero p.jumpto em { font-style: normal; display: inline-block; }
 .hero p.jumpto em:after { content: "\00a0" }
@@ -213,7 +265,7 @@
         @media screen and (max-width: 728px) {
           .hero p.jumpto { font-size: 13px; width: 65%; margin: 0 auto; }
           .hero p.jumpto em { display: none; }
-          .hero p.jumpto em.prompt { display: block; padding-bottom: 5px; color: rgba(0,0,0,0.5); font-weight: normal; text-transform: uppercase; letter-spacing: 0px; font-family: 'Proxima Nova Bold' }
+          .hero p.jumpto em.prompt { display: block; padding-bottom: 5px; color: rgba(0,0,0,0.5); font-weight: normal; text-transform: uppercase; letter-spacing: 0px; font-family: 'ProximaNovaBold' }
           .hero p.jumpto a { display: block; padding: 11px 0 10px; background: #fff; border: 1px solid rgba(0,0,0,0.15); margin-bottom: -1px; }
         }
 
@@ -257,5 +309,5 @@
 /* Chord Progressions */
 
 #chord_progressions h4 { margin: 10px 0 5px; }
-#chord_progressions h5 { font-family: "Proxima Nova Light"; margin-bottom: 8px; color: rgba(0,0,0,0.6); }
+#chord_progressions h5 { font-family: "ProximaNovaLight"; margin-bottom: 8px; color: rgba(0,0,0,0.6); }
 #chord_progressions pre { margin-bottom: 15px; }
