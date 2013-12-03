@@ -40,8 +40,9 @@ $(document).ready(function(){
     $(this).parent().parent().css('width',size);
   } );
 
-  $('#content').fadeIn(600);
-
+  $('#content').animate({
+    opacity: 1
+  }, 600);
 });
 
 
