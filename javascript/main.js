@@ -15,6 +15,9 @@
             var current_width = $(window).width();
             if(current_width < 1028){
               $('html').addClass("screen_small").removeClass("scree_large");
+              if ( !($('#navburger').hasClass('open')) ) {
+                $('#drawer').hide();
+              }
             } 
             if(current_width > 1028){
               $('html').addClass("screen_large").removeClass("screen_small");
