@@ -317,3 +317,7 @@
 #chord_progressions h4 { margin: 10px 0 5px; }
 #chord_progressions h5 { font-family: "ProximaNovaLight"; margin-bottom: 8px; color: rgba(0,0,0,0.6); }
 #chord_progressions pre { margin-bottom: 15px; }
+
+/* Song Info */
+
+#song_info { padding-bottom: 80px; }
