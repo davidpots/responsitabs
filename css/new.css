@@ -70,7 +70,11 @@
           transition: background-color 0.5s ease;
         }
 
-        a  { color: #44a0d9; text-decoration: none; }
+        a  { 
+          color: #44a0d9; 
+          text-decoration: none; 
+          -webkit-tap-highlight-color: rgba(0,0,0,0); /* via http://css-tricks.com/snippets/css/remove-gray-highlight-when-tapping-links-in-mobile-safari/ */
+        }
 
         h1,h2,h3,h4,h5,h6 { color: #444; margin: 0 0 20px 0; font-weight: normal; }
 
