@@ -212,6 +212,7 @@
     /* Title: All Screensizes */
     #title h1 { text-transform: uppercase; color: #fff; letter-spacing: 1px; text-align: left; }
     #title p { color: rgba(255,255,255,0.7); font-family: "ProximaNovaLight"; }
+    #title #navburger { border: none; }
 
     /* Title: Wide Screens */
     #title { text-align: center; }
@@ -226,9 +227,9 @@
       #title .text { position: absolute; left: 67px; top: 20px; }
       #title h1 { margin: 0 0 4px 0; text-align: left; }
       #title p { width: auto; }
-      #title #navburger { position: absolute; right: 20px; top: 20px; display: block; height: 44px; width: 44px; line-height: 44px; color: #fff; display: block; text-align: center; font-size: 32px; background: transparent url(../images/hamburger.png) center no-repeat; background-size: 16px 12px; border-radius: 4px; border: 1px solid rgba(255,255,255,0.3); -webkit-tap-highlight-color: rgba(0,0,0,0); /* via http://css-tricks.com/snippets/css/remove-gray-highlight-when-tapping-links-in-mobile-safari/ */ }
-      #title #navburger:hover { background-color: rgba(0,0,0,0.1); border-color: #46b1db; }
-      #title #navburger.open { background-color: rgba(0,0,0,0.1); border-color: #46b1db; background-image: url(../images/hamburger-close.png); background-size: 12px 12px; }
+      #title #navburger { position: absolute; right: 20px; top: 20px; display: block; height: 44px; width: 44px; line-height: 44px; color: #fff; display: block; text-align: center; font-size: 32px; background: transparent url(../images/hamburger.png) center no-repeat; background-size: 20px 15px; border-radius: 4px; -webkit-tap-highlight-color: rgba(0,0,0,0); /* via http://css-tricks.com/snippets/css/remove-gray-highlight-when-tapping-links-in-mobile-safari/ */ }
+      #title #navburger:hover { background-color: rgba(0,0,0,0.1); }
+      #title #navburger.open { background-image: url(../images/hamburger-close.png); background-size: 12px 12px; }
 
     }
     
@@ -248,7 +249,7 @@
 }
 
 /* Nav */
-#nav ul { margin: 0; }
+#nav ul { margin: 0; z-index: 10; background: #44a0d9; }
 #nav ul > li { list-style: none; }
 #nav ul > li a { text-align: center; text-transform: uppercase; font-size: 13px; line-height: 14px; font-family: "ProximaNovaLight"; letter-spacing: 0.5px; color: #fff; padding: 18px 0px 15px; display: block; border-bottom: 1px solid #46b1db; transition: background-color 0.25s ease; }
 #nav ul > li:first-child a { border-top: 1px solid #46b1db; }
@@ -265,7 +266,7 @@
     #social p { color: #fff; opacity: 0.8; font-family: "ProximaNovaLight"; font-size: 14px; line-height: 18px; text-align: center; margin: 0 0 9px 0; }
     #social ul { margin: 0 0 0 -10px; text-align: center; font-size: 0; }
     #social ul li { list-style: none; display: inline-block; }
-    #social ul li a { display: block; width: 36px; height: 36px; overflow: hidden; margin-left: 6px; border-radius: 4px; background-color: rgba(0,0,0,0.1); background-repeat: no-repeat; background-size: 32px 32px; background-position: center; transition: background-color 0.25s ease; }
+    #social ul li a { display: block; width: 36px; height: 36px; overflow: hidden; margin-left: 6px; border-radius: 4px; background-color: rgba(0,0,0,0.1); background-repeat: no-repeat; background-size: 32px 32px; background-position: center; transition: background-color 0.25s ease; border: none; }
     #social ul li a:hover { background-color: rgba(0,0,0,0.3); }
 
     #social ul li.tw a { background-image: url(../images/icon-twitter.png); }
