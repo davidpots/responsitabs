@@ -203,7 +203,7 @@
                 .wrapper-narrow   { max-width: 700px; margin: 0 auto; }
                 .wrapper-narrower { max-width: 480px; margin: 0 auto; }
 
-        section { margin-bottom: 100px; }
+        section { padding-top: 40px; margin-bottom: 100px; }
             @media screen and (max-width: 320px) { section { margin-bottom: 32px; } }
             @media screen and (max-width: 480px) { section { margin-bottom: 48px; } }
             @media screen and (max-width: 640px) { section { margin-bottom: 72px; } }
@@ -231,8 +231,7 @@
       #title p { width: auto; }
       #title #navburger { position: absolute; right: 20px; top: 20px; display: block; height: 44px; width: 44px; line-height: 44px; color: #fff; display: block; text-align: center; font-size: 32px; background: transparent url(../images/hamburger.png) center no-repeat; background-size: 20px 15px; border-radius: 4px; -webkit-tap-highlight-color: rgba(0,0,0,0); /* via http://css-tricks.com/snippets/css/remove-gray-highlight-when-tapping-links-in-mobile-safari/ */ }
       #title #navburger:hover { background-color: rgba(0,0,0,0.1); }
-      #title #navburger.open { background-image: url(../images/hamburger-close.png); background-size: 12px 12px; }
-
+      #title #navburger.open { background-image: url(../images/hamburger-close.png); background-size: 16px 16px; }
     }
     
     /* Title: Really Small Screens */
